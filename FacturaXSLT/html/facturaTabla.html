@@ -1,0 +1,73 @@
+<html>
+   <head>
+      <title>Factura - FAC-2025-002</title>
+      <style>
+                    body { font-family: Arial, sans-serif; margin: 40px; }
+                    .factura-container { max-width: 700px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+                    h2, h3 { color: #333; text-align: center; }
+                    .info { display: flex; justify-content: space-between; margin-bottom: 20px; }
+                    .info div { width: 48%; }
+                    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+                    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+                    th { background-color: #f4f4f4; }
+                    .totales { text-align: right; margin-top: 20px; }
+                    .totales p { font-size: 16px; margin: 5px 0; }
+                    .total-final { font-size: 18px; font-weight: bold; color: #d9534f; }
+                </style>
+   </head>
+   <body>
+      <div class="factura-container">
+         <h2>Factura: FAC-2025-002</h2>
+         <h3>Fecha: 2025-03-09</h3>
+         <div class="info">
+            <div>
+               <h3>Emisor</h3>
+               <p>
+                  <strong>Nombre:</strong>Comercial ABC S.L.</p>
+               <p>
+                  <strong>NIF:</strong>ES98765432A</p>
+               <p>
+                  <strong>Dirección:</strong>Carrer de la Pau 45, Valencia</p>
+            </div>
+            <div>
+               <h3>Receptor</h3>
+               <p>
+                  <strong>Nombre:</strong>María López</p>
+               <p>
+                  <strong>NIF:</strong>ES12398765B</p>
+               <p>
+                  <strong>Dirección:</strong>Carrer del Mar 56, Valencia</p>
+            </div>
+         </div>
+         <h3>Productos</h3>
+         <table>
+            <tr>
+               <th>Descripción</th>
+               <th>Cantidad</th>
+               <th>Precio Unitario (€)</th>
+               <th>Total (€)</th>
+            </tr>
+            <tr>
+               <td>Ordenador portátil 15"</td>
+               <td>1</td>
+               <td>850.00</td>
+               <td>850.00</td>
+            </tr>
+            <tr>
+               <td>Ratón inalámbrico</td>
+               <td>1</td>
+               <td>30.00</td>
+               <td>30.00</td>
+            </tr>
+         </table>
+         <div class="totales">
+            <p>
+               <strong>Subtotal:</strong>880.00 €</p>
+            <p>
+               <strong>IVA:</strong>184.80 €</p>
+            <p class="total-final">
+               <strong>Total a Pagar:</strong>1064.80 €</p>
+         </div>
+      </div>
+   </body>
+</html>

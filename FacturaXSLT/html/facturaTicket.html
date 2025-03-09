@@ -1,0 +1,152 @@
+<html>
+   <head>
+      <title>Factura Electrónica - Estilo Ticket</title>
+      <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: 'Courier New', Courier, monospace;
+                    background-color: #f8f8f8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    height: 100vh;
+                    margin: 0;
+                }
+
+                .ticket {
+                    width: 300px;
+                    padding: 20px;
+                    background-color: #ffffff;
+                    border: 1px solid #ccc;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                    font-size: 0.9em;
+                }
+
+                h2 {
+                    text-align: center;
+                    font-size: 1.5em;
+                    margin-bottom: 10px;
+                    color: #333;
+                }
+
+                .header, .footer {
+                    text-align: center;
+                    margin-bottom: 15px;
+                    font-weight: bold;
+                    color: #333;
+                }
+
+                .header {
+                    font-size: 1.1em;
+                }
+
+                .footer {
+                    font-size: 0.8em;
+                    color: #777;
+                }
+
+                .details {
+                    margin-bottom: 20px;
+                    font-size: 0.9em;
+                }
+
+                .details div {
+                    margin-bottom: 8px;
+                }
+
+                .line-items {
+                    margin-bottom: 20px;
+                }
+
+                .line-items div {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 5px 0;
+                    border-bottom: 1px dashed #ccc;
+                }
+
+                .line-items .total {
+                    font-weight: bold;
+                }
+
+                .total {
+                    font-size: 1.2em;
+                    text-align: right;
+                    font-weight: bold;
+                    margin-top: 15px;
+                }
+
+                .total span {
+                    display: inline-block;
+                    width: 80%;
+                    text-align: left;
+                }
+
+                .total .amount {
+                    width: 20%;
+                    text-align: right;
+                }
+
+                .divider {
+                    border-top: 1px solid #ccc;
+                    margin: 10px 0;
+                }
+            </style>
+   </head>
+   <body>
+      <div class="ticket">
+         <h2>Factura Electrónica</h2>
+         <div class="header">Empresa XYZ S.A.<br/>ES12345678Z</div>
+         <div class="details">
+            <div>
+               <strong>Cliente:</strong>Juan Pérez</div>
+            <div>
+               <strong>Dirección:</strong>Avenida Siempre Viva 742, Barcelona</div>
+            <div>
+               <strong>Fecha:</strong>2025-03-08</div>
+            <div>
+               <strong>Factura No:</strong>FAC-2025-001</div>
+         </div>
+         <div class="line-items">
+            <div>
+               <span>Monitor 24" Full HD</span>
+               <span>1</span>
+               <span>150.00 €</span>
+               <span>150.00 €</span>
+            </div>
+            <div>
+               <span>Teclado mecánico RGB</span>
+               <span>1</span>
+               <span>80.00 €</span>
+               <span>80.00 €</span>
+            </div>
+         </div>
+         <div class="divider"/>
+         <div class="total">
+            <div>
+               <span>Subtotal:</span>
+               <span class="amount">230.00 €</span>
+            </div>
+            <div>
+               <span>IVA:</span>
+               <span class="amount">48.30 €</span>
+            </div>
+            <div>
+               <span>Total:</span>
+               <span class="amount">278.30 €</span>
+            </div>
+         </div>
+         <div class="footer">
+            <p>¡Gracias por su compra!</p>
+            <p>www.empresa.com</p>
+         </div>
+      </div>
+   </body>
+</html>

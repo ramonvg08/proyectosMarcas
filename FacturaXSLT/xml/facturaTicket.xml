@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/facturaTicket.xslt"?>
+<Factura>
+    <Emisor>
+        <Nombre>Empresa XYZ S.A.</Nombre>
+        <NIF>ES12345678Z</NIF>
+        <Direccion>Calle Falsa 123, Madrid</Direccion>
+    </Emisor>
+    <Receptor>
+        <Nombre>Juan Pérez</Nombre>
+        <NIF>ES87654321X</NIF>
+        <Direccion>Avenida Siempre Viva 742, Barcelona</Direccion>
+    </Receptor>
+    <Detalles>
+        <Fecha>2025-03-08</Fecha>
+        <Numero>FAC-2025-001</Numero>
+    </Detalles>
+    <Productos>
+        <Producto>
+            <Descripcion>Monitor 24" Full HD</Descripcion>
+            <Cantidad>1</Cantidad>
+            <PrecioUnitario>150.00</PrecioUnitario>
+            <Total>150.00</Total>
+        </Producto>
+        <Producto>
+            <Descripcion>Teclado mecánico RGB</Descripcion>
+            <Cantidad>1</Cantidad>
+            <PrecioUnitario>80.00</PrecioUnitario>
+            <Total>80.00</Total>
+        </Producto>
+    </Productos>
+    <Totales>
+        <Subtotal>230.00</Subtotal>
+        <IVA>48.30</IVA>
+        <TotalFactura>278.30</TotalFactura>
+    </Totales>
+</Factura>

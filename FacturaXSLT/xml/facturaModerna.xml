@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/facturaModerna.xslt"?>
+<Factura>
+    <Emisor>
+        <Nombre>Zara España SA</Nombre>
+        <NIF>ES66778899E</NIF>
+        <Direccion>Calle Sol 33, Madrid</Direccion>
+    </Emisor>
+    <Receptor>
+        <Nombre>Ramon Valverde</Nombre>
+        <NIF>ES99887766F</NIF>
+        <Direccion>Calle Mayor 10, La Ñora, Murcia</Direccion>
+    </Receptor>
+    <Detalles>
+        <Fecha>2025-03-11</Fecha>
+        <Numero>FAC-2025-004</Numero>
+    </Detalles>
+    <Productos>
+        <Producto>
+            <Descripcion>Sudadera L verde</Descripcion>
+            <Cantidad>1</Cantidad>
+            <PrecioUnitario>55.50</PrecioUnitario>
+            <Total>55.50</Total>
+        </Producto>
+        <Producto>
+            <Descripcion>Pantalon Cargo</Descripcion>
+            <Cantidad>1</Cantidad>
+            <PrecioUnitario>25.00</PrecioUnitario>
+            <Total>25.00</Total>
+        </Producto>
+        <Producto>
+            <Descripcion>Camiseta Básica</Descripcion>
+            <Cantidad>3</Cantidad>
+            <PrecioUnitario>12.50</PrecioUnitario>
+            <Total>37.50</Total>
+        </Producto>
+        <Producto>
+            <Descripcion>Gafas de Sol</Descripcion>
+            <Cantidad>1</Cantidad>
+            <PrecioUnitario>55.00</PrecioUnitario>
+            <Total>55.00</Total>
+        </Producto>
+    </Productos>
+    <Totales>
+        <Subtotal>173.00</Subtotal>
+        <IVA>36.33</IVA>
+        <TotalFactura>209.33</TotalFactura>
+    </Totales>
+</Factura>

@@ -1,0 +1,176 @@
+<html>
+   <head>
+      <title>Factura Electrónica - Estilo Corporativo</title>
+      <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f4f7f9;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                }
+
+                .invoice-box {
+                    width: 700px;
+                    background: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                }
+
+                h2 {
+                    text-align: center;
+                    color: #2980b9;
+                    border-bottom: 2px solid #2980b9;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                }
+
+                .header, .client-info {
+                    margin-bottom: 20px;
+                    padding: 15px;
+                    background-color: #ecf0f1;
+                    border-radius: 8px;
+                }
+
+                .header strong, .client-info strong {
+                    color: #2980b9;
+                }
+
+                .header div, .client-info div {
+                    margin-bottom: 10px;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                }
+
+                table, th, td {
+                    border: 1px solid #ddd;
+                    padding: 12px;
+                    text-align: center;
+                    background-color: #f9f9f9;
+                }
+
+                th {
+                    background-color: #2980b9;
+                    color: white;
+                    text-transform: uppercase;
+                }
+
+                .totals {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    margin-top: 30px;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    text-align: left;
+                }
+
+                .totals-item {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 0;
+                    background-color: #ecf0f1;
+                    border-radius: 8px;
+                    border-bottom: 1px solid #dcdfe1;
+                }
+
+                .totals-item strong {
+                    color: #2980b9;
+                }
+
+                .totals-item span {
+                    color: #333;
+                }
+
+                .total-amount {
+                    background-color: #27ae60;
+                    color: white;
+                    font-size: 1.5em;
+                    padding: 15px 30px;
+                    border-radius: 15px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+            </style>
+   </head>
+   <body>
+      <div class="invoice-box">
+         <h2>Factura Electrónica</h2>
+         <div class="header">
+            <div>
+               <strong>Empresa:</strong>Zara España SA</div>
+            <div>
+               <strong>NIF:</strong>ES66778899E</div>
+            <div>
+               <strong>Fecha:</strong>2025-03-11</div>
+         </div>
+         <div class="client-info">
+            <div>
+               <strong>Cliente:</strong>Ramon Valverde</div>
+            <div>
+               <strong>Dirección:</strong>Calle Mayor 10, La Ñora, Murcia</div>
+         </div>
+         <table>
+            <tr>
+               <th>Descripción</th>
+               <th>Cantidad</th>
+               <th>Precio Unitario</th>
+               <th>Subtotal</th>
+            </tr>
+            <tr>
+               <td>Sudadera L verde</td>
+               <td>1</td>
+               <td>55.50 €</td>
+               <td>55.50 €</td>
+            </tr>
+            <tr>
+               <td>Pantalon Cargo</td>
+               <td>1</td>
+               <td>25.00 €</td>
+               <td>25.00 €</td>
+            </tr>
+            <tr>
+               <td>Camiseta Básica</td>
+               <td>3</td>
+               <td>12.50 €</td>
+               <td>37.50 €</td>
+            </tr>
+            <tr>
+               <td>Gafas de Sol</td>
+               <td>1</td>
+               <td>55.00 €</td>
+               <td>55.00 €</td>
+            </tr>
+         </table>
+         <div class="totals">
+            <div class="totals-item">
+               <strong>Subtotal:</strong>
+               <span>173.00 €</span>
+            </div>
+            <div class="totals-item">
+               <strong>IVA:</strong>
+               <span>36.33 €</span>
+            </div>
+            <div class="totals-item">
+               <strong>Total:</strong>
+               <span>209.33 €</span>
+            </div>
+         </div>
+         <div class="total-amount">
+            <strong>Total a Pagar:</strong>
+            <span>209.33 €</span>
+         </div>
+      </div>
+   </body>
+</html>

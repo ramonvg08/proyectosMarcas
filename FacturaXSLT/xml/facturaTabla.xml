@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/facturaTabla.xslt"?>
+<Factura>
+    <Emisor>
+        <Nombre>Comercial ABC S.L.</Nombre>
+        <NIF>ES98765432A</NIF>
+        <Direccion>Carrer de la Pau 45, Valencia</Direccion>
+    </Emisor>
+    <Receptor>
+        <Nombre>María López</Nombre>
+        <NIF>ES12398765B</NIF>
+        <Direccion>Carrer del Mar 56, Valencia</Direccion>
+    </Receptor>
+    <Detalles>
+        <Fecha>2025-03-09</Fecha>
+        <Numero>FAC-2025-002</Numero>
+    </Detalles>
+    <Productos>
+        <Producto>
+            <Descripcion>Ordenador portátil 15"</Descripcion>
+            <Cantidad>1</Cantidad>
+            <PrecioUnitario>850.00</PrecioUnitario>
+            <Total>850.00</Total>
+        </Producto>
+        <Producto>
+            <Descripcion>Ratón inalámbrico</Descripcion>
+            <Cantidad>1</Cantidad>
+            <PrecioUnitario>30.00</PrecioUnitario>
+            <Total>30.00</Total>
+        </Producto>
+    </Productos>
+    <Totales>
+        <Subtotal>880.00</Subtotal>
+        <IVA>184.80</IVA>
+        <TotalFactura>1064.80</TotalFactura>
+    </Totales>
+</Factura>

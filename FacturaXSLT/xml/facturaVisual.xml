@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/facturaVisual.xslt"?>
+<Factura>
+    <Emisor>
+        <Nombre>Tecnología Innovadora S.A.</Nombre>
+        <NIF>ES11223344C</NIF>
+        <Direccion>Calle Mayor 12, Sevilla</Direccion>
+    </Emisor>
+    <Receptor>
+        <Nombre>Carlos Martínez</Nombre>
+        <NIF>ES44332211D</NIF>
+        <Direccion>Calle Luna 98, Sevilla</Direccion>
+    </Receptor>
+    <Detalles>
+        <Fecha>2025-03-10</Fecha>
+        <Numero>FAC-2025-003</Numero>
+    </Detalles>
+    <Productos>
+        <Producto>
+            <Descripcion>Smartphone 5G</Descripcion>
+            <Cantidad>2</Cantidad>
+            <PrecioUnitario>600.00</PrecioUnitario>
+            <Total>1200.00</Total>
+        </Producto>
+        <Producto>
+            <Descripcion>Cargador rápido</Descripcion>
+            <Cantidad>1</Cantidad>
+            <PrecioUnitario>25.00</PrecioUnitario>
+            <Total>25.00</Total>
+        </Producto>
+    </Productos>
+    <Totales>
+        <Subtotal>1225.00</Subtotal>
+        <IVA>255.25</IVA>
+        <TotalFactura>1480.25</TotalFactura>
+    </Totales>
+</Factura>
