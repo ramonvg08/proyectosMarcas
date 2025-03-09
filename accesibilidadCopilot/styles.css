@@ -1,0 +1,148 @@
+/* Estilos generales para accesibilidad y diseño atractivo */
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegurar contraste suficiente y mejorar apariencia de enlaces */
+a {
+    color: #b3ffb3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:focus, a:hover {
+    color: #80ff80;
+    outline: 2px solid #ffcc00;
+}
+
+/* Mejor estructura semántica y diseño */
+header, section, footer {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background: #006600;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #008000, #004d00);
+    color: white;
+    padding: 40px;
+    border-radius: 10px 10px 0 0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Accesibilidad y estilo en formularios */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input, textarea, select, button {
+    font-size: 1rem;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #80ff80;
+    outline: none;
+    box-shadow: 0 0 5px rgba(128, 255, 128, 0.5);
+}
+
+button {
+    background: linear-gradient(135deg, #008000, #004d00);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+button:focus, button:hover {
+    background: linear-gradient(135deg, #006600, #003300);
+    outline: 2px solid #ffcc00;
+}
+
+/* Mejoras en tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #008000;
+    color: white;
+}
+
+td, th {
+    padding: 12px;
+    border: 1px solid #ffffff;
+    text-align: left;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #005500;
+}
+
+/* Estilos para navegación por teclado */
+*:focus {
+    outline: 3px solid #ffcc00;
+}
+
+/* Asegurar buen contraste en los botones */
+@media (prefers-contrast: high) {
+    body {
+        background-color: #002200;
+        color: #ffffff;
+    }
+    a {
+        color: #ffcc00;
+    }
+    button {
+        background-color: #ffcc00;
+        color: black;
+    }
+}
+
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    header, main, section, footer {
+        padding: 15px;
+    }
+    button {
+        width: 100%;
+    }
+}

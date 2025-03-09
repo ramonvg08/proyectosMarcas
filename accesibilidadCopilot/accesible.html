@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página Accesible</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a nuestra página</h1>
+        <p>Esta es una página optimizada para accesibilidad según WCAG 2.2.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de Registro</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" aria-required="true">
+                <br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" aria-required="true">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de Productos</h2>
+            <table>
+                <caption>Lista de productos y precios</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manzana</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>0.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Enlaces de Interés</h2>
+            <a href="#" aria-label="Ir a la sección de contacto">Ir a contacto</a>
+        </section>
+
+        <section>
+            <h2>Imagen de Ejemplo</h2>
+            <img src="img/accesibilidad.png" alt="Modelos accesibles para todos" role="img">
+        </section>
+    </main>
+</body>
+</html>
